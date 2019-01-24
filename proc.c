@@ -263,6 +263,8 @@ exit(int status)
 
   // Jump into the scheduler, never to return.
   curproc->state = ZOMBIE;
+  curproc->exit_status = status;
+
   sched();
   panic("zombie exit");
 }
