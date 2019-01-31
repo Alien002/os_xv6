@@ -16,7 +16,7 @@ sys_fork(void)
 int
 sys_exit(int status)
 {
-  exit(status);
+  exit(status);                             //defs.h exit call
   return 0;  // not reached
 }
 
