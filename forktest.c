@@ -34,7 +34,7 @@ forktest(void)
   }
 
   for(; n > 0; n--){
-    if(wait(null) < 0){                       //changed wait() to wait(null)
+    if(wait(NULL) < 0){                       //changed wait() to wait(null)
       printf(1, "wait stopped early\n");
       exit(-1);      //error
     }
