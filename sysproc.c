@@ -26,7 +26,7 @@ sys_exit(void)
 int
 sys_wait(void)
 {
-    int status;  
+    int status;
 
     if(argint(0, &status) < 0)
         return -1;
@@ -51,7 +51,7 @@ sys_waitpid(void){
         return -1;
     
     
-    return int waitpid(pid, (int*)status, options);          /*int pid, int *status, int options  usys.S user.h*/
+    return waitpid(pid, (int*)status, options);          /*int pid, int *status, int options  usys.S user.h*/
 }
 
 
