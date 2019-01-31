@@ -93,7 +93,7 @@ runcmd(struct cmd *cmd)
     lcmd = (struct listcmd*)cmd;
     if(fork1() == 0)
       runcmd(lcmd->left);
-    wait();
+    wait(null);                     //changed wait() to wait(null)
     runcmd(lcmd->right);
     break;
 
@@ -117,8 +117,8 @@ runcmd(struct cmd *cmd)
     }
     close(p[0]);
     close(p[1]);
-    wait();
-    wait();
+    wait(null);         //modified from wait()
+    wait(null);         //same as above
     break;
 
   case BACK:
@@ -166,7 +166,7 @@ main(void)
     }
     if(fork1() == 0)
       runcmd(parsecmd(buf));
-    wait();
+    wait(null);       //wait() to wait(null)
   }
   exit(0);          //end of func no error
 }
