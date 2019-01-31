@@ -315,6 +315,56 @@ wait(int *status)      //wait(void) to wait(int* status)
   }
 }
 
+//*********************
+//waitpid
+int
+waitpid(int pid, int *status, int options)          //(int pid, int *status, int options)  usys.S -> user.h
+{
+    
+    struct proc *p;
+    struct proc *curproc = myproc();
+    _Bool found_pid = false;
+    
+    acquire(&ptable.lock);
+    for(;;){
+        // Same loop as wait, except we also check for processes equal to given pid
+        for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
+            
+            if(p->pid == pid)
+                found_pid = true;
+            
+            if(p->state == ZOMBIE){
+                // Found one.
+                if(status != NULL)
+                    *status = p->exit_status;
+                kfree(p->kstack);
+                p->kstack = 0;
+                freevm(p->pgdir);
+                p->pid = 0;
+                p->parent = 0;
+                p->name[0] = 0;
+                p->killed = 0;
+                p->state = UNUSED;
+                release(&ptable.lock);
+                return pid;
+            }
+        }
+        
+        // No point waiting if we found the pid
+        if(!found_pid){
+            release(&ptable.lock);
+            return -1;
+        }
+        
+        // Wait for process exit.  (See wakeup1 call in proc_exit.)
+        sleep(curproc, &ptable.lock);  //DOC: wait-sleep
+    }
+
+
+}
+//*********************
+
+
 //PAGEBREAK: 42
 // Per-CPU process scheduler.
 // Each CPU calls scheduler() after setting itself up.

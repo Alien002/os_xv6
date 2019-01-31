@@ -34,6 +34,27 @@ sys_wait(void)
   return wait((int*)status);
 }
 
+//3 arguements passed in
+int
+sys_waitpid(void){
+    int pid;
+    int status;
+    int options;
+    
+    if(argint(0, &pid) < 0)          //checks 1st [0] arguement
+        return -1;
+    
+    if(argint(1, &status) < 0)          //checks 2nd [1] arguement
+        return -1;
+
+    if(argint(2, &options) < 0)          //checks 3rd [2] arguement
+        return -1;
+    
+    
+    return int waitpid(pid, (int*)status, options);          //(int pid, int *status, int options)  usys.S -> user.h
+}
+
+
 int
 sys_kill(void)
 {
@@ -97,3 +118,9 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+
+
+
+
+
