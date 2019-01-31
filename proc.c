@@ -288,6 +288,8 @@ wait(int *status)      //wait(void) to wait(int* status)
       havekids = 1;
       if(p->state == ZOMBIE){
         // Found one.
+        if(status != NULL)
+            *status = p->status;
         pid = p->pid;
         kfree(p->kstack);
         p->kstack = 0;
