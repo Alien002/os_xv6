@@ -34,3 +34,14 @@ I'll let you know if I use any <br />
     - wc.c <br />
     - zombie.c <br />
     - **Usertests.c <br />
+
+
+-- int wait(void) into int wait(int *status) -- <br />
+    - defs.h <br />
+    - forktest.c <br /> 
+    - init.c <br />
+    - proc.c <br />
+    - sh.c <br />
+    - stressfc.c <br />
+    - user.h <br />
+    - usertests.c <br />
