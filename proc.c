@@ -291,7 +291,7 @@ wait(int *status)      //wait(void) to wait(int* status)
       if(p->state == ZOMBIE){
         // Found one.
         if(status != NULL)
-            *status = p->status;
+            *status = p->exit_status;
         pid = p->pid;
         kfree(p->kstack);
         p->kstack = 0;
