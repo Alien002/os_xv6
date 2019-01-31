@@ -41,4 +41,4 @@ int atoi(const char*);
 
 
 //define null cause C is dumb
-#DEFINE NULL 0
+#define NULL 0
