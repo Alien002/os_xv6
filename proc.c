@@ -325,7 +325,7 @@ waitpid(int pid, int *status, int options)          //(int pid, int *status, int
     
     struct proc *p;
     struct proc *curproc = myproc();
-    _Bool found_pid = false;
+    _Bool found_pid = 0;
     
     acquire(&ptable.lock);
     for(;;){
@@ -333,7 +333,7 @@ waitpid(int pid, int *status, int options)          //(int pid, int *status, int
         for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
             
             if(p->pid == pid)
-                found_pid = true;
+                found_pid = 1;
             
             if(p->state == ZOMBIE){
                 // Found one.
