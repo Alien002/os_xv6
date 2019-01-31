@@ -40,7 +40,7 @@ forktest(void)
     }
   }
 
-  if(wait(null) != -1){                           //changed wait() to wait(null)
+  if(wait(NULL) != -1){                           //changed wait() to wait(null)
     printf(1, "wait got too many\n");
     exit(-1);        //error
   }
