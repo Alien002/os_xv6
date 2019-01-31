@@ -20,7 +20,7 @@ sys_exit(void)
     if(argint(0, &status) < 0)
         return -1;
     exit(status);                             //defs.h exit call
-    return exit(status);                      
+    return 0;
 }
 
 int
