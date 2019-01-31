@@ -18,6 +18,7 @@ I'll let you know if I use any <br />
 
 
 ## Notes for files
+-- void exit(int status) edits --<br />
 - User.h <br />
     - echo.c <br />
     - forktest.c <br />
