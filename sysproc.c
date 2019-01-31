@@ -14,10 +14,13 @@ sys_fork(void)
 }
 
 int
-sys_exit(int status)
+sys_exit(void)
 {
-  exit(status);                             //defs.h exit call
-  return 0;  // not reached
+    int status;
+    if(argint(0, &status) < 0)
+        return -1;
+    exit(status);                             //defs.h exit call
+    return exit(status);                      
 }
 
 int
