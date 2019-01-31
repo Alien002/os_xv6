@@ -77,7 +77,7 @@ main(int argc, char *argv[])
 
   if(argc < 2){
     ls(".");
-    exit(1);        //error?
+    exit(-1);        //error?
   }
   for(i=1; i<argc; i++)
     ls(argv[i]);

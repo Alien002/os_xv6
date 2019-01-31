@@ -27,7 +27,7 @@ wc(int fd, char *name)
   }
   if(n < 0){
     printf(1, "wc: read error\n");
-    exit(1);    //error
+    exit(-1);    //error
   }
   printf(1, "%d %d %d %s\n", l, w, c, name);
 }
