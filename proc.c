@@ -6,7 +6,7 @@
 #include "x86.h"
 #include "proc.h"
 #include "spinlock.h"
-
+#include <stdbool.h>
 
 
 struct {
@@ -325,18 +325,17 @@ waitpid(int pid, int *status, int options)          //(int pid, int *status, int
     
     struct proc *p;
     struct proc *curproc = myproc();
-    _Bool found_pid = 0;
+    bool found_pid = 0;
     
     acquire(&ptable.lock);
+    //Same loop as wait, also cheks for pid
     for(;;){
-        // Same loop as wait, except we also check for processes equal to given pid
-        for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
+        for(p = ptable.proc; p < &ptable.proc[NPROC]; ++p){
             
             if(p->pid == pid)
                 found_pid = 1;
             
             if(p->state == ZOMBIE){
-                // Found one.
                 if(status != NULL)
                     *status = p->exit_status;
                 kfree(p->kstack);
