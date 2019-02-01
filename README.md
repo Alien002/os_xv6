@@ -46,3 +46,15 @@ I'll let you know if I use any <br />
     - stressfc.c <br />
     - user.h <br />
     - usertests.c <br />
+
+
+
+
+-- lab1 2 --<br />
+- c: 18, exit: 22   <br />
+- c: 19, exit: 23   <br />
+- c: 17, exit: 21  **   <br />
+- c: 20, exit: 24  **   <br />
+- c: 21, exit: 25   <br />
+
+
