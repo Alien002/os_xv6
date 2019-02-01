@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		4020632F2204023C00E0072F /* lab1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = lab1.c; path = ../lab1.c; sourceTree = "<group>"; };
 		4084D65121FA51A600A27D55 /* #elf.h# */ = {isa = PBXFileReference; lastKnownFileType = text; name = "#elf.h#"; path = "../#elf.h#"; sourceTree = "<group>"; };
 		4084D65221FA51A600A27D55 /* asm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = asm.h; path = ../asm.h; sourceTree = "<group>"; };
 		4084D65321FA51A600A27D55 /* bio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bio.c; path = ../bio.c; sourceTree = "<group>"; };
@@ -109,7 +110,7 @@
 		4084D6B421FA51A600A27D55 /* vm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = vm.c; path = ../vm.c; sourceTree = "<group>"; };
 		4084D6B521FA51A600A27D55 /* wc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wc.c; path = ../wc.c; sourceTree = "<group>"; };
 		4084D6B621FA51A600A27D55 /* x86.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = x86.h; path = ../x86.h; sourceTree = "<group>"; };
-		4084D6B721FA51A600A27D55 /* xv6 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = xv6; sourceTree = "<group>"; };
+		4084D6B721FA51A600A27D55 /* xv6 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = xv6; sourceTree = "<group>"; };
 		4084D6B821FA51A600A27D55 /* zombie.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = zombie.c; path = ../zombie.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +153,7 @@
 				4084D67121FA51A600A27D55 /* kbd.h */,
 				4084D67221FA51A600A27D55 /* kernel.ld */,
 				4084D67321FA51A600A27D55 /* kill.c */,
+				4020632F2204023C00E0072F /* lab1.c */,
 				4084D67421FA51A600A27D55 /* lapic.c */,
 				4084D67521FA51A600A27D55 /* LICENSE */,
 				4084D67621FA51A600A27D55 /* ln.c */,
