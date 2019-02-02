@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		402063302205482100E0072F /* #elf.h# */ = {isa = PBXFileReference; lastKnownFileType = text; path = "#elf.h#"; sourceTree = "<group>"; };
+		402063312205482100E0072F /* asm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asm.h; sourceTree = "<group>"; };
+		402063322205482100E0072F /* bio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bio.c; sourceTree = "<group>"; };
+		402063332205482100E0072F /* bootasm.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = bootasm.d; sourceTree = "<group>"; };
+		402063342205482100E0072F /* bootasm.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = bootasm.o; sourceTree = "<group>"; };
+		402063352205482100E0072F /* bootasm.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = bootasm.S; sourceTree = "<group>"; };
+		402063362205482100E0072F /* bootmain.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bootmain.c; sourceTree = "<group>"; };
+		402063372205482100E0072F /* bootmain.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = bootmain.d; sourceTree = "<group>"; };
+		402063382205482100E0072F /* bootmain.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = bootmain.o; sourceTree = "<group>"; };
+		402063392205482100E0072F /* buf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = buf.h; sourceTree = "<group>"; };
+		4020633A2205482100E0072F /* BUGS */ = {isa = PBXFileReference; lastKnownFileType = text; path = BUGS; sourceTree = "<group>"; };
+		4020633B2205482100E0072F /* cat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cat.c; sourceTree = "<group>"; };
+		4020633C2205482100E0072F /* console.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = console.c; sourceTree = "<group>"; };
+		4020633D2205482100E0072F /* cuth */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = cuth; sourceTree = "<group>"; };
+		4020633E2205482100E0072F /* date.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = date.h; sourceTree = "<group>"; };
+		4020633F2205482100E0072F /* defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
+		402063402205482100E0072F /* dot-bochsrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "dot-bochsrc"; sourceTree = "<group>"; };
+		402063412205482100E0072F /* echo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = echo.c; sourceTree = "<group>"; };
+		402063422205482100E0072F /* elf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = elf.h; sourceTree = "<group>"; };
+		402063432205482100E0072F /* entry.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = entry.S; sourceTree = "<group>"; };
+		402063442205482100E0072F /* entryother.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = entryother.S; sourceTree = "<group>"; };
+		402063452205482100E0072F /* exec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = exec.c; sourceTree = "<group>"; };
+		402063462205482100E0072F /* fcntl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fcntl.h; sourceTree = "<group>"; };
+		402063472205482100E0072F /* file.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = file.c; sourceTree = "<group>"; };
+		402063482205482100E0072F /* file.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
+		402063492205482100E0072F /* forktest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = forktest.c; sourceTree = "<group>"; };
+		4020634A2205482100E0072F /* fs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fs.c; sourceTree = "<group>"; };
+		4020634B2205482100E0072F /* fs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fs.h; sourceTree = "<group>"; };
+		4020634C2205482100E0072F /* gdbutil */ = {isa = PBXFileReference; lastKnownFileType = text; path = gdbutil; sourceTree = "<group>"; };
+		4020634D2205482100E0072F /* grep.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = grep.c; sourceTree = "<group>"; };
+		4020634E2205482100E0072F /* ide.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ide.c; sourceTree = "<group>"; };
+		4020634F2205482100E0072F /* init.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = init.c; sourceTree = "<group>"; };
+		402063502205482100E0072F /* initcode.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = initcode.S; sourceTree = "<group>"; };
+		402063512205482100E0072F /* ioapic.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ioapic.c; sourceTree = "<group>"; };
+		402063522205482100E0072F /* kalloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = kalloc.c; sourceTree = "<group>"; };
+		402063532205482100E0072F /* kbd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = kbd.c; sourceTree = "<group>"; };
+		402063542205482100E0072F /* kbd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kbd.h; sourceTree = "<group>"; };
+		402063552205482100E0072F /* kernel.ld */ = {isa = PBXFileReference; lastKnownFileType = text; path = kernel.ld; sourceTree = "<group>"; };
+		402063562205482100E0072F /* kill.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = kill.c; sourceTree = "<group>"; };
+		402063572205482100E0072F /* lab1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab1.c; sourceTree = "<group>"; };
+		402063582205482100E0072F /* lapic.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lapic.c; sourceTree = "<group>"; };
+		402063592205482100E0072F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4020635A2205482100E0072F /* ln.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ln.c; sourceTree = "<group>"; };
+		4020635B2205482100E0072F /* log.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = log.c; sourceTree = "<group>"; };
+		4020635C2205482100E0072F /* ls.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ls.c; sourceTree = "<group>"; };
+		4020635D2205482100E0072F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4020635E2205482100E0072F /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4020635F2205482100E0072F /* memide.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = memide.c; sourceTree = "<group>"; };
+		402063602205482100E0072F /* memlayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = memlayout.h; sourceTree = "<group>"; };
+		402063612205482100E0072F /* mkdir.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mkdir.c; sourceTree = "<group>"; };
+		402063622205482100E0072F /* mkfs */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mkfs; sourceTree = "<group>"; };
+		402063632205482100E0072F /* mkfs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mkfs.c; sourceTree = "<group>"; };
+		402063642205482100E0072F /* mmu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mmu.h; sourceTree = "<group>"; };
+		402063652205482100E0072F /* mp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mp.c; sourceTree = "<group>"; };
+		402063662205482100E0072F /* mp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mp.h; sourceTree = "<group>"; };
+		402063672205482100E0072F /* Notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
+		402063682205482100E0072F /* param.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = param.h; sourceTree = "<group>"; };
+		402063692205482100E0072F /* picirq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = picirq.c; sourceTree = "<group>"; };
+		4020636A2205482100E0072F /* pipe.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pipe.c; sourceTree = "<group>"; };
+		4020636B2205482100E0072F /* pr.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = pr.pl; sourceTree = "<group>"; };
+		4020636C2205482100E0072F /* printf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = printf.c; sourceTree = "<group>"; };
+		4020636D2205482100E0072F /* printpcs */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = printpcs; sourceTree = "<group>"; };
+		4020636E2205482100E0072F /* proc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = proc.c; sourceTree = "<group>"; };
+		4020636F2205482100E0072F /* proc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = proc.h; sourceTree = "<group>"; };
+		402063702205482100E0072F /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		402063712205482100E0072F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		402063722205482100E0072F /* rm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rm.c; sourceTree = "<group>"; };
+		402063732205482100E0072F /* runoff */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = runoff; sourceTree = "<group>"; };
+		402063742205482100E0072F /* runoff.list */ = {isa = PBXFileReference; lastKnownFileType = text; path = runoff.list; sourceTree = "<group>"; };
+		402063752205482100E0072F /* runoff.spec */ = {isa = PBXFileReference; lastKnownFileType = text; path = runoff.spec; sourceTree = "<group>"; };
+		402063762205482100E0072F /* runoff1 */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = runoff1; sourceTree = "<group>"; };
+		402063772205482100E0072F /* sh.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sh.c; sourceTree = "<group>"; };
+		402063782205482100E0072F /* show1 */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = show1; sourceTree = "<group>"; };
+		402063792205482100E0072F /* sign.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = sign.pl; sourceTree = "<group>"; };
+		4020637A2205482100E0072F /* sleep1.p */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = sleep1.p; sourceTree = "<group>"; };
+		4020637B2205482100E0072F /* sleeplock.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sleeplock.c; sourceTree = "<group>"; };
+		4020637C2205482100E0072F /* sleeplock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sleeplock.h; sourceTree = "<group>"; };
+		4020637D2205482100E0072F /* spinlock.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = spinlock.c; sourceTree = "<group>"; };
+		4020637E2205482100E0072F /* spinlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = spinlock.h; sourceTree = "<group>"; };
+		4020637F2205482100E0072F /* spinp */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = spinp; sourceTree = "<group>"; };
+		402063802205482100E0072F /* stat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stat.h; sourceTree = "<group>"; };
+		402063812205482100E0072F /* stressfs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stressfs.c; sourceTree = "<group>"; };
+		402063822205482100E0072F /* string.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = string.c; sourceTree = "<group>"; };
+		402063832205482100E0072F /* swtch.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = swtch.S; sourceTree = "<group>"; };
+		402063842205482100E0072F /* syscall.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = syscall.c; sourceTree = "<group>"; };
+		402063852205482100E0072F /* syscall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = syscall.h; sourceTree = "<group>"; };
+		402063862205482100E0072F /* sysfile.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sysfile.c; sourceTree = "<group>"; };
+		402063872205482100E0072F /* sysproc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sysproc.c; sourceTree = "<group>"; };
+		402063882205482100E0072F /* toc.ftr */ = {isa = PBXFileReference; lastKnownFileType = text; path = toc.ftr; sourceTree = "<group>"; };
+		402063892205482100E0072F /* toc.hdr */ = {isa = PBXFileReference; lastKnownFileType = text; path = toc.hdr; sourceTree = "<group>"; };
+		4020638A2205482100E0072F /* trap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = trap.c; sourceTree = "<group>"; };
+		4020638B2205482100E0072F /* trapasm.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = trapasm.S; sourceTree = "<group>"; };
+		4020638C2205482100E0072F /* traps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = traps.h; sourceTree = "<group>"; };
+		4020638D2205482100E0072F /* TRICKS */ = {isa = PBXFileReference; lastKnownFileType = text; path = TRICKS; sourceTree = "<group>"; };
+		4020638E2205482100E0072F /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		4020638F2205482100E0072F /* uart.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = uart.c; sourceTree = "<group>"; };
+		402063902205482100E0072F /* ulib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ulib.c; sourceTree = "<group>"; };
+		402063912205482100E0072F /* ulib.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = ulib.d; sourceTree = "<group>"; };
+		402063922205482100E0072F /* ulib.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = ulib.o; sourceTree = "<group>"; };
+		402063932205482100E0072F /* umalloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = umalloc.c; sourceTree = "<group>"; };
+		402063942205482100E0072F /* user.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = user.h; sourceTree = "<group>"; };
+		402063952205482100E0072F /* usertests.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = usertests.c; sourceTree = "<group>"; };
+		402063962205482100E0072F /* usys.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = usys.S; sourceTree = "<group>"; };
+		402063972205482100E0072F /* vectors.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = vectors.pl; sourceTree = "<group>"; };
+		402063982205482100E0072F /* vm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vm.c; sourceTree = "<group>"; };
+		402063992205482100E0072F /* wc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wc.c; sourceTree = "<group>"; };
+		4020639A2205482100E0072F /* x86.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = x86.h; sourceTree = "<group>"; };
+		4020639B2205482100E0072F /* zombie.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zombie.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4084D64A21FA519300A27D55 = {
+			isa = PBXGroup;
+			children = (
+				402063302205482100E0072F /* #elf.h# */,
+				402063312205482100E0072F /* asm.h */,
+				402063322205482100E0072F /* bio.c */,
+				402063332205482100E0072F /* bootasm.d */,
+				402063342205482100E0072F /* bootasm.o */,
+				402063352205482100E0072F /* bootasm.S */,
+				402063362205482100E0072F /* bootmain.c */,
+				402063372205482100E0072F /* bootmain.d */,
+				402063382205482100E0072F /* bootmain.o */,
+				402063392205482100E0072F /* buf.h */,
+				4020633A2205482100E0072F /* BUGS */,
+				4020633B2205482100E0072F /* cat.c */,
+				4020633C2205482100E0072F /* console.c */,
+				4020633D2205482100E0072F /* cuth */,
+				4020633E2205482100E0072F /* date.h */,
+				4020633F2205482100E0072F /* defs.h */,
+				402063402205482100E0072F /* dot-bochsrc */,
+				402063412205482100E0072F /* echo.c */,
+				402063422205482100E0072F /* elf.h */,
+				402063432205482100E0072F /* entry.S */,
+				402063442205482100E0072F /* entryother.S */,
+				402063452205482100E0072F /* exec.c */,
+				402063462205482100E0072F /* fcntl.h */,
+				402063472205482100E0072F /* file.c */,
+				402063482205482100E0072F /* file.h */,
+				402063492205482100E0072F /* forktest.c */,
+				4020634A2205482100E0072F /* fs.c */,
+				4020634B2205482100E0072F /* fs.h */,
+				4020634C2205482100E0072F /* gdbutil */,
+				4020634D2205482100E0072F /* grep.c */,
+				4020634E2205482100E0072F /* ide.c */,
+				4020634F2205482100E0072F /* init.c */,
+				402063502205482100E0072F /* initcode.S */,
+				402063512205482100E0072F /* ioapic.c */,
+				402063522205482100E0072F /* kalloc.c */,
+				402063532205482100E0072F /* kbd.c */,
+				402063542205482100E0072F /* kbd.h */,
+				402063552205482100E0072F /* kernel.ld */,
+				402063562205482100E0072F /* kill.c */,
+				402063572205482100E0072F /* lab1.c */,
+				402063582205482100E0072F /* lapic.c */,
+				402063592205482100E0072F /* LICENSE */,
+				4020635A2205482100E0072F /* ln.c */,
+				4020635B2205482100E0072F /* log.c */,
+				4020635C2205482100E0072F /* ls.c */,
+				4020635D2205482100E0072F /* main.c */,
+				4020635E2205482100E0072F /* Makefile */,
+				4020635F2205482100E0072F /* memide.c */,
+				402063602205482100E0072F /* memlayout.h */,
+				402063612205482100E0072F /* mkdir.c */,
+				402063622205482100E0072F /* mkfs */,
+				402063632205482100E0072F /* mkfs.c */,
+				402063642205482100E0072F /* mmu.h */,
+				402063652205482100E0072F /* mp.c */,
+				402063662205482100E0072F /* mp.h */,
+				402063672205482100E0072F /* Notes */,
+				402063682205482100E0072F /* param.h */,
+				402063692205482100E0072F /* picirq.c */,
+				4020636A2205482100E0072F /* pipe.c */,
+				4020636B2205482100E0072F /* pr.pl */,
+				4020636C2205482100E0072F /* printf.c */,
+				4020636D2205482100E0072F /* printpcs */,
+				4020636E2205482100E0072F /* proc.c */,
+				4020636F2205482100E0072F /* proc.h */,
+				402063702205482100E0072F /* README */,
+				402063712205482100E0072F /* README.md */,
+				402063722205482100E0072F /* rm.c */,
+				402063732205482100E0072F /* runoff */,
+				402063742205482100E0072F /* runoff.list */,
+				402063752205482100E0072F /* runoff.spec */,
+				402063762205482100E0072F /* runoff1 */,
+				402063772205482100E0072F /* sh.c */,
+				402063782205482100E0072F /* show1 */,
+				402063792205482100E0072F /* sign.pl */,
+				4020637A2205482100E0072F /* sleep1.p */,
+				4020637B2205482100E0072F /* sleeplock.c */,
+				4020637C2205482100E0072F /* sleeplock.h */,
+				4020637D2205482100E0072F /* spinlock.c */,
+				4020637E2205482100E0072F /* spinlock.h */,
+				4020637F2205482100E0072F /* spinp */,
+				402063802205482100E0072F /* stat.h */,
+				402063812205482100E0072F /* stressfs.c */,
+				402063822205482100E0072F /* string.c */,
+				402063832205482100E0072F /* swtch.S */,
+				402063842205482100E0072F /* syscall.c */,
+				402063852205482100E0072F /* syscall.h */,
+				402063862205482100E0072F /* sysfile.c */,
+				402063872205482100E0072F /* sysproc.c */,
+				402063882205482100E0072F /* toc.ftr */,
+				402063892205482100E0072F /* toc.hdr */,
+				4020638A2205482100E0072F /* trap.c */,
+				4020638B2205482100E0072F /* trapasm.S */,
+				4020638C2205482100E0072F /* traps.h */,
+				4020638D2205482100E0072F /* TRICKS */,
+				4020638E2205482100E0072F /* types.h */,
+				4020638F2205482100E0072F /* uart.c */,
+				402063902205482100E0072F /* ulib.c */,
+				402063912205482100E0072F /* ulib.d */,
+				402063922205482100E0072F /* ulib.o */,
+				402063932205482100E0072F /* umalloc.c */,
+				402063942205482100E0072F /* user.h */,
+				402063952205482100E0072F /* usertests.c */,
+				402063962205482100E0072F /* usys.S */,
+				402063972205482100E0072F /* vectors.pl */,
+				402063982205482100E0072F /* vm.c */,
+				402063992205482100E0072F /* wc.c */,
+				4020639A2205482100E0072F /* x86.h */,
+				4020639B2205482100E0072F /* zombie.c */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		4084D64B21FA519300A27D55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+			};
+			buildConfigurationList = 4084D64E21FA519300A27D55 /* Build configuration list for PBXProject "xv6" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4084D64A21FA519300A27D55;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		4084D64F21FA519300A27D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		4084D65021FA519300A27D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4084D64E21FA519300A27D55 /* Build configuration list for PBXProject "xv6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4084D64F21FA519300A27D55 /* Debug */,
+				4084D65021FA519300A27D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4084D64B21FA519300A27D55 /* Project object */;
+}
