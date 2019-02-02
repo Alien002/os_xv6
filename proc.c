@@ -227,7 +227,7 @@ fork(void)
 // An exited process remains in the zombie state
 // until its parent calls wait() to find out it exited.
 void
-exit(int status)                    //passes in status
+exit(int status)                                //passes in status
 {
   struct proc *curproc = myproc();
   struct proc *p;
@@ -265,7 +265,7 @@ exit(int status)                    //passes in status
 
   // Jump into the scheduler, never to return.
   curproc->state = ZOMBIE;
-  curproc->exit_status = status;   //exit_status set from passed in value
+  curproc->exit_status = status;                //exit_status set from passed in value
 
   sched();
   panic("zombie exit");
@@ -328,14 +328,14 @@ waitpid(int pid, int *status, int options)          //(int pid, int *status, int
     bool found_pid = 0;
     
     acquire(&ptable.lock);
-    //Same loop as wait, also cheks for pid
+    //Same loop as wait, also checks for pid
     for(;;){
         for(p = ptable.proc; p < &ptable.proc[NPROC]; ++p){
             
-            if(p->pid == pid)
+            if(p->pid == pid)                       //if pid is same as process, bool = 1
                 found_pid = 1;
             
-            if(p->state == ZOMBIE){
+            if(p->state == ZOMBIE){                 //zombie state
                 if(status != NULL)
                     *status = p->exit_status;
                 kfree(p->kstack);
@@ -347,14 +347,14 @@ waitpid(int pid, int *status, int options)          //(int pid, int *status, int
                 p->killed = 0;
                 p->state = UNUSED;
                 release(&ptable.lock);
-                return pid;
+                return pid;                         //returns pid if process exists
             }
         }
         
-        // No point waiting if we found the pid
+        
         if(!found_pid){
             release(&ptable.lock);
-            return -1;
+            return -1;                              //returns -1 if PID does not exist or error occurs
         }
         
         // Wait for process exit.  (See wakeup1 call in proc_exit.)
