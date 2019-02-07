@@ -338,6 +338,7 @@ waitpid(int pid, int *status, int options)          //(int pid, int *status, int
             if(p->state == ZOMBIE){                 //zombie state
                 if(status != NULL)
                     *status = p->exit_status;
+                pid = p->pid;
                 kfree(p->kstack);
                 p->kstack = 0;
                 freevm(p->pgdir);
