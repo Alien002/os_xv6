@@ -9,7 +9,7 @@
 #include <stdbool.h>
 
 #define WNOHANG 	1
-const int MAX_PRIORITY = 100;
+const int MAX_PRIORITY = 63;
 
 struct {
   struct spinlock lock;
