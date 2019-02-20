@@ -409,7 +409,7 @@ scheduler(void)
       }
         
       for(q = ptable.proc; q < &ptable.proc[NPROC]; q++){
-          if(q -> state == RUNNABLE && q != run this && q -> priority > 0){
+          if(q -> state == RUNNABLE && q != runThis && q -> priority > 0){
               --(q -> priority);
           }
       }
