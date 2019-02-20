@@ -119,7 +119,21 @@ sys_uptime(void)
   return xticks;
 }
 
-
+//changes process's priority
+int
+sys_setpriority(void)
+{
+    int priority
+    
+    if(argint(0, &priority) < 0){
+        return -1;
+    }
+    if(priority < 0 || priority > 31){
+        return -1;
+    }
+    
+    return setpriority(priority);
+}
 
 
 

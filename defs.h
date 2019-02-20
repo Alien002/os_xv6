@@ -116,7 +116,7 @@ void            scheduler(void) __attribute__((noreturn));
 void            sched(void);
 void            setproc(struct proc*);
 void            sleep(void*, struct spinlock*);
-void            setpriority(int);                   //added setpriority (lab 2)
+int            setpriority(int);                   //added setpriority (lab 2)
 void            userinit(void);
 int             wait(int *);                        //changed from int wait(void)
 int             waitpid(int, int *, int);          //(int pid, int *status, int options)  usys.S -> user.h

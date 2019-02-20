@@ -8,6 +8,8 @@
 #include "spinlock.h"
 #include <stdbool.h>
 
+#define WNOHANG 	1
+const int MAX_PRIORITY = 63;
 
 struct {
   struct spinlock lock;
@@ -379,6 +381,7 @@ void
 scheduler(void)
 {
   struct proc *p;
+  struct proc *q;
   struct cpu *c = mycpu();
   c->proc = 0;
   
@@ -388,23 +391,51 @@ scheduler(void)
 
     // Loop over process table looking for process to run.
     acquire(&ptable.lock);
+      
     for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
-      if(p->state != RUNNABLE)
-        continue;
+      int highest_priority = MAX_PRIORITY;
+      struct proc *runThis = NULL;
+        
+        
+      for(q = ptable.proc; q < &ptable.proc[NPROC]; q++){
+          if(q -> state == RUNNABLE && q -> priority < highest_priority){
+              runThis = q;
+              highest_priority = q -> priority;
+          }
+      }
+
+      if(!runThis){
+          continue;
+      }
+        
+      for(q = ptable.proc; q < &ptable.proc[NPROC]; q++){
+          if(q -> state == RUNNABLE && q != run this && q -> priority > 0){
+              --(q -> priority);
+          }
+      }
+      
+      if(runThis -> priority < MAX_PRIORITY){
+          ++(runThis -> priority);
+      }
+    
 
       // Switch to chosen process.  It is the process's job
       // to release ptable.lock and then reacquire it
       // before jumping back to us.
-      c->proc = p;
-      switchuvm(p);
-      p->state = RUNNING;
+      c->proc = runThis;
+      switchuvm(runThis);
+      runThis -> state = RUNNING;
 
-      swtch(&(c->scheduler), p->context);
+      swtch(&(c->scheduler), runThis->context);
       switchkvm();
 
       // Process is done running for now.
       // It should have changed its p->state before coming back.
       c->proc = 0;
+        
+      if(runThis -> priority < MAX_PRIORITY){
+        ++(runThis -> priority);
+      }
     }
     release(&ptable.lock);
 
@@ -437,12 +468,13 @@ sched(void)
   mycpu()->intena = intena;
 }
 
-void
+int
 setpriority(int new_priority){
     acquire(&ptable.lock);
     struct proc *p = myproc();
     p -> priority = new_priority;
     release(&ptable.lock);
+    return 0;
 }
 
 
