@@ -123,7 +123,7 @@ sys_uptime(void)
 int
 sys_setpriority(void)
 {
-    int priority
+    int priority;
     
     if(argint(0, &priority) < 0){
         return -1;
