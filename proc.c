@@ -437,13 +437,12 @@ sched(void)
   mycpu()->intena = intena;
 }
 
-int
+void
 setpriority(int new_priority){
     acquire(&ptable.lock);
     struct proc *p = myproc();
     p -> priority = new_priority;
     release(&ptable.lock);
-    return 0;
 }
 
 
