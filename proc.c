@@ -410,12 +410,12 @@ scheduler(void)
         
       for(q = ptable.proc; q < &ptable.proc[NPROC]; q++){
           if(q -> state == RUNNABLE && q != runThis && q -> priority > 0){
-              --(q -> priority);
+              q -> priority -=1;
           }
       }
       
       if(runThis -> priority < MAX_PRIORITY){
-          ++(runThis -> priority);
+          runThis -> priority +=1;
       }
     
 
@@ -434,7 +434,7 @@ scheduler(void)
       c->proc = 0;
         
       if(runThis -> priority < MAX_PRIORITY){
-        ++(runThis -> priority);
+        runThis -> priority +=1;
       }
     }
     release(&ptable.lock);

@@ -28,9 +28,10 @@ int main(int argc, char *argv[])
     setpriority(0);
     for (i = 0; i <  3; i++) {
 	pid = fork();
+        
 	if (pid > 0 ) {
 		continue;}
-	else if ( pid == 0) {
+	else if (pid == 0) {
 
 		setpriority(30-10*i);	
 		for (j=0;j<50000;j++) {
@@ -47,10 +48,11 @@ int main(int argc, char *argv[])
 
 	if(pid > 0) {
 		for (i = 0; i <  3; i++) {
+            printf(1, "I am here");
 			wait(0);
 
 		}
                      printf(1,"\n if processes with highest priority finished first then its correct \n");
-}
+    }
 	exit(0);
 	return 0;}
