@@ -338,7 +338,7 @@ waitpid(int pid, int *status, int options)          //(int pid, int *status, int
             if(p->state == ZOMBIE){                 //zombie state
                 if(status != NULL)
                     *status = p->exit_status;
-                pid = p->pid;2
+                pid = p->pid2;
                 kfree(p->kstack);
                 p->kstack = 0;
                 freevm(p->pgdir);
@@ -440,7 +440,7 @@ sched(void)
 void
 setpriority(int new_priority){
     acquire(&ptable.lock);
-    struc proc *p = myproc();
+    struct proc *p = myproc();
     p -> priority = new_priority;
     release(&ptable.lock);
     return 0;
