@@ -115,6 +115,7 @@
 		402063992205482100E0072F /* wc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wc.c; sourceTree = "<group>"; };
 		4020639A2205482100E0072F /* x86.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = x86.h; sourceTree = "<group>"; };
 		4020639B2205482100E0072F /* zombie.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zombie.c; sourceTree = "<group>"; };
+		40E438D2221D131E005525DE /* lab2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab2.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -161,6 +162,7 @@
 				402063552205482100E0072F /* kernel.ld */,
 				402063562205482100E0072F /* kill.c */,
 				402063572205482100E0072F /* lab1.c */,
+				40E438D2221D131E005525DE /* lab2.c */,
 				402063582205482100E0072F /* lapic.c */,
 				402063592205482100E0072F /* LICENSE */,
 				4020635A2205482100E0072F /* ln.c */,
