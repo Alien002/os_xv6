@@ -132,7 +132,7 @@ sys_setpriority(void)
         return -1;
     }
     
-    return setpriority(new_priority);
+    return setpriority(priority);
 }
 
 
