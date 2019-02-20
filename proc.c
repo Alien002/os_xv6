@@ -437,6 +437,16 @@ sched(void)
   mycpu()->intena = intena;
 }
 
+void
+setpriority(int new_priority){
+    acquire(&ptable.lock);
+    struc proc *p = myproc();
+    p -> priority = new_priority;
+    release(&ptable.lock);
+    return 0;
+}
+
+
 // Give up the CPU for one scheduling round.
 void
 yield(void)
