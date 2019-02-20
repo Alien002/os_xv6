@@ -99,11 +99,12 @@ extern int sys_pipe(void);
 extern int sys_read(void);
 extern int sys_sbrk(void);
 extern int sys_sleep(void);
+extern int sys_setpriority(void);       //added setpriority (lab 2)
 extern int sys_unlink(void);
 extern int sys_wait(void);
+extern int sys_waitpid(void);           //added waitpid
 extern int sys_write(void);
 extern int sys_uptime(void);
-extern int sys_waitpid(void);           //added waitpid
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
@@ -128,6 +129,7 @@ static int (*syscalls[])(void) = {
 [SYS_mkdir]   sys_mkdir,
 [SYS_close]   sys_close,
 [SYS_waitpid] sys_waitpid,              //added waitpid
+[SYS_setpriority] sys_setpriority,
 };
 
 void

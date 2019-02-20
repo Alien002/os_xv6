@@ -21,3 +21,4 @@
 #define SYS_link   20
 #define SYS_mkdir  21
 #define SYS_close  22
+#define SYS_setpriority 23      //setpriority added as new syscall (lab 2)
